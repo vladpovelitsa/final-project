@@ -1,0 +1,12 @@
+.link {
+  color: var(--color-primary);
+  text-decoration: underline dashed;
+  text-underline-offset: 8px;
+  display: inline-block;
+  font-weight: 600;
+  transition: .3s;
+  line-height: 1.6;
+  &:hover {
+    color: var(--color-secondary);
+  }
+}

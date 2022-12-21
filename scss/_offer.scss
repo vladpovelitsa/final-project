@@ -1,0 +1,120 @@
+.offer {
+  padding-top: 144px;
+  padding-bottom: 96px;
+  background: url('../img/offer-bg.jpg') center no-repeat, rgba(0,0,0,.8);
+  background-blend-mode: overlay;
+  background-size: cover;
+  position: relative;
+  min-height: 768px;
+  box-sizing: border-box;
+  &:before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: var(--gradient-primary);
+    opacity: .2;
+    pointer-events: none;
+  }
+  &__gradient_text {
+    z-index: 1;
+    text {
+      font-size: 100px;
+      line-height: 1.2;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 20px;
+    }
+  }
+  &__title {
+    color: var(--color-white);
+    font-size: 54px;
+    font-weight: 600;
+    margin-top: -43px;
+    margin-bottom: 24px;
+    text-align: center;
+    z-index: 1;
+  }
+  &__desc{
+    color: var(--color-gray);
+    max-width: 620px;
+    margin: 0 auto 92px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.44;
+    text-align: center;
+    z-index: 1;
+  }
+  &__get_started {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:  var(--gradient-primary) , url('../img/offer-bg.jpg') center no-repeat;
+    background-color: rgba(83,95,230, 0.6);
+    background-size: cover;
+    border-radius: 60px var(--border-radius) var(--border-radius) var(--border-radius);
+    position: relative;
+    padding: 80px 50px 54px;
+    z-index: 1;
+    .button {
+      border-radius: 1000px;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%,-44%);
+      &:before {
+        border-radius: 1000px;
+      }
+    }
+
+    .test {
+      content:"";
+      width: 611px;
+      height: 307px;
+      background: url('../img/offer-decor.svg');
+      position: absolute;
+      left: 50%;
+      top: -18px;
+      z-index: -1;
+      transform: translateX(-50%);
+      display: block;
+    }
+  }
+  &__trusted {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    font-weight: 600;
+    font-size: 24px;
+    max-width: 396px;
+    line-height: 1.17;
+    margin-top: -7px;
+
+    svg {
+      min-width: 64px;
+    }
+  }
+  &__numbers {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(3, 200px);
+
+    &_item {
+      text-align: center;
+      color: var(--color-white);
+      font-weight: 600;
+      font-size: 14px;
+      background: rgba(83, 95, 230, .5);
+      border-radius: var(--border-radius);
+      padding: 15px;
+
+    }
+    &_value {
+      font-size: 32px;
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+body {
+  font-family: "Gilroy", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  background: var(--color-black);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button, a {
+  cursor: pointer;
+  transition: .3s;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.center {
+  padding-left: calc(50vw - 656px);
+  padding-right: calc(50vw - 656px);
+}
+
+.gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
